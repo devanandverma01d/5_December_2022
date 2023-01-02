@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,20 +12,48 @@
     </style>
     <script src="./js/script1.js"></script>
     <script>
+        let student3 = {
+            name: `Manmohan`,
+            surname: `Singh`,
+            age: 85
+        }
 
     </script>
 </head>
+
 <body>
     <h1>JS datatype -object</h1>
     <ol>
-        <li>Number</li>
-        <li>String</li>
-        <li>object</li>
+        <li>Number i.e 5,6.5,100</li>
+        <li>String i.e "",''</li>
+        <li>object i.e {}</li>
     </ol>
+    <p id="std3"></p>
+    <p class="std4"></p>
 
     <script src="./js/script2.js"></script>
     <script>
 
+        //this is information about student 2.
+        var student2 = {
+            //1. Pro[perty:value
+            name: "Yashwant",
+            surname: "Sinha",
+            age: 75
+            //2.
+        }
+        // This is one of 4 methods through which we can log/display the JS code
+        alert("Hello " + student2.name);
+        //lets displaythe output
+        //console.log(student2.name, student2.surname);
+
+        //lets display the output
+        //document.getElementById('std3').innerHTML = "Hello " + student3.name;
+
+        //this is one of the 4 methods to log/display JS code
+
+        document.querySelector('p.std4').innerHTML = "Hello Mr. " + student3.name + " " + student3.surname;
     </script>
 </body>
+
 </html>
